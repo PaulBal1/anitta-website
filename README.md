@@ -23,6 +23,24 @@ python3 -m http.server 8080
 
 Any static host works (GitHub Pages, Netlify, cPanel, etc.).
 
+## Adding photos to the gallery
+
+1. Resize the photos to max. 1200 px (e.g. `convert foto.jpg -resize 1200x1200\> -quality 78 foto.jpg`).
+2. Copy them to `assets/img/galerie/<album>/` (`despre-noi`, `activitati`, `serbari`).
+3. In `galerie.html`, inside the right album's `<div class="photo-grid">`, add one line per photo:
+
+   ```html
+   <a href="assets/img/galerie/activitati/foto-noua.jpg" data-lightbox><img src="assets/img/galerie/activitati/foto-noua.jpg" alt="Descriere" loading="lazy"></a>
+   ```
+
+   For a new group inside an album, copy a whole `<div class="album-group ...">` block and change the `<h3>` title.
+
+## Publishing (GitHub Pages)
+
+Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
+The site is then available at `https://paulbal1.github.io/anitta-website/`.
+For a custom domain (e.g. anitta.ro) see [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
 ## Structure
 
 ```
