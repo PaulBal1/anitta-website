@@ -228,7 +228,6 @@ h3 { font-size: 1.45rem; }
   padding: 70px 0 120px;
   overflow: hidden;
 }
-.page-banner.banner--pink { background: linear-gradient(120deg, var(--pink) 0%, var(--orange) 100%); }
 .page-banner.banner--violet { background: linear-gradient(120deg, var(--violet) 0%, var(--pink) 100%); }
 .page-banner.banner--sun { background: linear-gradient(120deg, var(--orange) 0%, var(--yellow) 100%); }
 .page-banner h1 { color: #fff; margin-bottom: 6px; text-shadow: 0 3px 0 rgba(0, 0, 0, .08); }
@@ -463,15 +462,6 @@ h3 { font-size: 1.45rem; }
 .access-map { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 70px; }
 .access-map img { border-radius: 28px; box-shadow: var(--shadow); transform: rotate(-2deg); border: 8px solid #fff; }
 
-/* ---------- Party ---------- */
-.days-badge {
-  display: inline-flex; align-items: center; gap: 10px;
-  background: var(--yellow); color: var(--navy);
-  font-family: var(--font-head); font-weight: 700; font-size: 1.2rem;
-  padding: 8px 24px; border-radius: 999px;
-}
-.party-list { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
-
 /* ---------- Footer ---------- */
 .site-footer { background: var(--purple); color: #f3dcf5; position: relative; margin-top: 90px; }
 .site-footer .wave { position: absolute; top: -79px; left: 0; right: 0; }
@@ -524,7 +514,7 @@ h3 { font-size: 1.45rem; }
 @media (max-width: 600px) {
   body { font-size: 16px; }
   .section { padding: 64px 0; }
-  .cards, .activity-grid, .footer-grid, .party-list { grid-template-columns: 1fr; }
+  .cards, .activity-grid, .footer-grid { grid-template-columns: 1fr; }
   .gallery-strip { grid-template-columns: repeat(2, 1fr); }
   .logo img { height: 56px; }
   .float-card--a { left: 0; }

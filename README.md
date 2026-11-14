@@ -12,7 +12,6 @@ Static site (HTML + CSS + vanilla JS), no build step. Content is in Romanian.
 | `galerie.html` | Galerie foto: Despre noi, Activitățile noastre, Serbări (with lightbox) |
 | `program.html` | Program 1 (normal) and Program 2 (prelungit) with prices and daily schedule |
 | `contact.html` | Address, phone, e-mail, Google Map and access sketch |
-| `petreceri.html` | Party offer (linked from the footer, as it was hidden in the original menu) |
 
 ## Run locally
 
